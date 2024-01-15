@@ -24,3 +24,10 @@ export const ButtonStyles = {
     backgroundColor: '#D0DAF7', 
   }
 }
+
+export const SocialButtonStyles = {
+  width: 180, height: 65,
+  border: `2px solid ${ThemeColors.fontColor}`,
+  borderRadius: '15px',
+  backgroundColor: ThemeColors.backgroundColor, textTransform: 'none'
+}

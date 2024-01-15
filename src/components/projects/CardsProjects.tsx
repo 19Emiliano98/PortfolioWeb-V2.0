@@ -7,6 +7,7 @@ import desus1 from '../../img/projects/desus1.png';
 import imageUploader from '../../img/projects/ImageUploaderChallengue/UploadImage.png';
 import jsImage from '../../img/lenguages/jsLogo.png';
 import tsImage from '../../img/lenguages/tsLogo.png';
+import reactImage from '../../img/lenguages/Frontend/reactLogo.png';
 import nodeImage from '../../img/lenguages/Backend/nodejsLogo.jpg';
 import materialImage from '../../img/lenguages/Frontend/materialLogo.png';
 import Tags from './Tags';
@@ -20,7 +21,8 @@ interface CardsDataProps {
   paraph: string;
   protected: boolean;
   image: string;
-  url: string;
+  urlWeb: string;
+  urlCode: string;
   lenguages: Array<testing>;
 }
 
@@ -30,9 +32,11 @@ const CardsData:CardsDataProps[] = [
     paraph: "Pagina web creada para pequeña empresa desarrolladora de software, código oculto por cuestiones de privacidad del cliente.",
     protected: true,
     image: desus1,
-    url: 'https://desusweb-19emiliano98.netlify.app/inicio',
+    urlWeb: 'https://desusweb-19emiliano98.netlify.app/inicio',
+    urlCode: '',
     lenguages: [
       { title: 'Javascript', image: jsImage },
+      { title: 'React.js', image: reactImage },
       { title: 'Material-UI', image: materialImage }
     ]
   },
@@ -41,9 +45,11 @@ const CardsData:CardsDataProps[] = [
     paraph: "Pagina web de practica donde podemos almacenar imagenes en la nube.",
     protected: false,
     image: imageUploader,
-    url: 'https://image-challengue-uploader.netlify.app/',
+    urlWeb: 'https://image-challengue-uploader.netlify.app/',
+    urlCode: 'https://github.com/19Emiliano98/ImageUploader-Backend.git',
     lenguages: [
       { title: 'Typescript', image: tsImage },
+      { title: 'React.js', image: reactImage },
       { title: 'Node.js', image: nodeImage },
       { title: 'Material-UI', image: materialImage }
 
@@ -82,7 +88,7 @@ const cardRender = (
             <Button 
               size="small" 
               variant="contained"
-              href={ x.url }
+              href={ x.urlWeb }
               sx={{ 
                 textTransform: 'none', 
                 backgroundColor: ButtonStyles
@@ -94,7 +100,7 @@ const cardRender = (
             <Button
               size="small" 
               variant="contained"
-              href={ x.url }
+              href={ x.urlCode }
               disabled={ x.protected ? true : false}
               sx={{ 
                 textTransform: 'none', 

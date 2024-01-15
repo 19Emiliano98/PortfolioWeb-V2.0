@@ -23,7 +23,13 @@ const renderOptionBar = (
 
 function LinkBar() {
   return (
-    <Box sx={{ position: 'fixed', pt: 4, left: '50%', transform: 'translate(-50%, 0%)' }}>
+    <Box 
+      sx={{ 
+        position: 'fixed', 
+        pt: 4, left: '50%', 
+        transform: 'translate(-50%, 0%)', zIndex: 1
+      }}
+    >
       <Toolbar 
         sx={{ 
           display: 'flex', justifyContent: { sm: 'center', xs: 'center' },
