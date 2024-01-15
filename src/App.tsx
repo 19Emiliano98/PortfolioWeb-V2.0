@@ -2,8 +2,8 @@ import { Box } from '@mui/material'
 
 import LinkBar from './components/appBar/LinkBar.tsx';
 import HomeSection from './components/home/HomeSection.tsx';
+import SocialSection from './components/social/SocialSection.tsx';
 import ProjectsSection from './components/projects/ProjectsSection.tsx';
-import Contact from './components/contact/Contact.tsx';
 
 import { ThemeColors } from './components/GlobalStyles.ts';
 
@@ -13,12 +13,11 @@ function App() {
       <LinkBar />
       
       <HomeSection />
+
+      <SocialSection />
       
       <ProjectsSection />
       
-      <Box sx={{ position: 'fixed', top: '44%', left: '2%' }}>
-        <Contact />
-      </Box>
     </Box>
   )
 }

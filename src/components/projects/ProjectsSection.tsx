@@ -11,7 +11,7 @@ const ProjectsSection = () => {
         <Typography sx={{ fontSize: '3rem' }} variant="h2">Proyectos</Typography>
       </Box>
 
-      <Box sx={{ display: 'flex', justifyContent: 'center', mt: 4 }}>
+      <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', mt: 7 }}>
         <CardsProjects />
       </Box>
     </Box>

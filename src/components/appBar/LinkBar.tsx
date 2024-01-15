@@ -6,7 +6,7 @@ const linkBar:string[] = [ 'Sobre Mi', 'Experiencias', 'Proyectos' ];
 
 const renderOptionBar = (
   linkBar.map( links => (
-    <MenuItem sx={{ mx: -0.6 }}>
+    <MenuItem key={links} sx={{ mx: -0.6 }}>
       <Link 
         sx={{
           textDecoration: 'none', color: '#EFF4FA', fontSize: { md: '18px', xs: '15px' },
