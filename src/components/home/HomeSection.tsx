@@ -6,12 +6,12 @@ import Image from '../../img/imagenPerfil.jpeg';
 
 const HomeSection = () => {
   return (
-      <Box sx={{display: 'flex', justifyContent: 'center', ml: { md: 0, sm: 4, xs: 4.5 } }}>
-        <Box sx={{ mt: 22 }}>
+      <Box sx={{display: 'flex', justifyContent: 'center' }}>
+        <Box sx={{ mt: { sm: 22, xs: 17 }, ml: { sm: 0, xs: 0.5 } }}>
           <Avatar 
             sx={{
-              width: { md: '80px', sm: '70px', xs: '40px' },
-              height: { md: '80px', sm: '70px', xs: '40px' },
+              width: { sm: '70px', xs: '60px' },
+              height: { sm: '70px', xs: '60px' },
               boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.5)', mb: 1.6
             }}
             alt="Imagen Perfil" 

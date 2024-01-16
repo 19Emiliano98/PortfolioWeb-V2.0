@@ -1,6 +1,7 @@
 import { Box, Card, CardMedia, Typography } from "@mui/material"
 
 import { SkillsCardStyles, TypographyMiniCards } from "../GlobalStyles";
+import { cSharpImage,netImage } from "./ImagesLoader";
 
 interface skillsContentProps {
   title: string;
@@ -8,13 +9,14 @@ interface skillsContentProps {
 }
 
 const skillsContent:Array<skillsContentProps> = [
-  { title: 'Javascript', image: 'jsImage' }
+  { title: 'C #', image: cSharpImage },
+  { title: '.Net Core', image: netImage }
 ]
 
 const renderCards = (
   skillsContent.map( x => (
     <Box key={ x.title }>
-      <Card sx={{ borderRadius: SkillsCardStyles, mr: 3, mb: 3 }}>
+      <Card sx={{ borderRadius: SkillsCardStyles, mr: { sm: 3, xs: 0 }, mb: 3 }}>
         <CardMedia 
           sx={{ width: 35, height: 35, borderRadius: '5px', mr: 2 }}
           image= { x.image }
@@ -31,7 +33,7 @@ const FocusSkills = () => {
     <Box 
       sx={{ 
         display: 'flex', flexWrap: 'wrap',
-        justifyContent: 'center', width: 1000 
+        justifyContent: 'center', maxWidth: { sm: 900, xs: 300 }, mx: 'auto'
       }}
     >
       { renderCards }

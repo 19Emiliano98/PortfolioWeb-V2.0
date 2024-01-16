@@ -6,8 +6,18 @@ export const ThemeColors = {
 
 export const TypographyBody = {
   color: ThemeColors.fontColor,
-  fontSize: '0.88rem',
+  fontSize: { sm: '1.4rem', xs: '0.83rem' },
   fontWeight: '400'
+}
+
+export const TypographyH2 = {
+  color: ThemeColors.fontColor,
+  fontSize: { sm: '2.5rem', xs:'1.9rem'},
+  fontWeight: '600'
+}
+
+export const TitularIcons = {
+  fontSize: { sm: '2.8rem', xs: '2.2rem' }
 }
 
 export const TypographyH5 = {
@@ -35,6 +45,7 @@ export const SocialButtonStyles = {
   width: 180, height: 65,
   border: `2px solid ${ThemeColors.fontColor}`,
   borderRadius: '15px',
+  fontSize: { sm: '2.3rem', xs: '1.7rem'},
   backgroundColor: ThemeColors.backgroundColor, textTransform: 'none'
 }
 

@@ -50,8 +50,8 @@ const CardsData:CardsDataProps[] = [
     lenguages: [
       { title: 'Typescript', image: tsImage },
       { title: 'React.js', image: reactImage },
-      { title: 'Node.js', image: nodeImage },
-      { title: 'Material-UI', image: materialImage }
+      { title: 'Material-UI', image: materialImage },
+      { title: 'Node.js', image: nodeImage }
 
     ]
   }
@@ -59,16 +59,16 @@ const CardsData:CardsDataProps[] = [
 
 const cardRender = (
   CardsData.map( x => (
-    <Box key={ x.title } sx={{ display: 'flex', justifyContent: 'center', width: 750, mb: 5 }}>
+    <Box key={ x.title } sx={{ display: { sm: 'flex', xs: 'inline' }, justifyContent: 'center', maxWidth: 720, mb: 5 }}>
       <CardMedia
-        sx={{ width: 405, height: 290, objectFit: 'cover', borderRadius: '15px' }}
+        sx={{ width: { sm: 405, xs: 330 }, height: { sm: 290, xs: 220 }, objectFit: 'cover', borderRadius: '15px' }}
         image= { x.image }
         title= { x.title }
       />
       <Card 
         sx={{ 
           display: 'flex', 
-          width: 260, height: 300,
+          width: { sm: 260, xs: 330 }, height: 300,
           backgroundColor: ThemeColors.backgroundColor,
           boxShadow: '0px 0px 0px 0px'
         }}

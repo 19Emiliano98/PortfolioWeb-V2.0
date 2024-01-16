@@ -2,7 +2,7 @@ import { Box, Card, CardMedia, Typography } from "@mui/material"
 
 import { 
   jsImage, tsImage, reactImage, materialImage,
-  boostrapImage, nodeImage, mongoImage
+  boostrapImage, nodeImage, mongoImage, sqlImage
 } from "./ImagesLoader";
 import { SkillsCardStyles, TypographyMiniCards } from "../GlobalStyles";
 
@@ -19,14 +19,24 @@ const skillsContent:Array<skillsContentProps> = [
   { title: 'Boostrap', image: boostrapImage },
   { title: 'Node.JS', image: nodeImage },
   { title: 'MongoDB', image: mongoImage },
+  { title: 'MySQL', image: sqlImage }
 ]
 
 const renderCards = (
   skillsContent.map( x => (
     <Box key={ x.title }>
-      <Card sx={{ borderRadius: SkillsCardStyles, mr: 3, mb: 3 }}>
+      <Card 
+        sx={{ 
+          borderRadius: SkillsCardStyles,
+          mr: { sm: 3, xs: 0 }, mb: 3 
+        }}
+      >
         <CardMedia 
-          sx={{ width: 35, height: 35, borderRadius: '5px', mr: 2 }}
+          sx={{ 
+            width: 35, height: 35, 
+            borderRadius: '5px', mr: 2,
+            backgroundColor: 'white'
+          }}
           image= { x.image }
         />
 
@@ -41,7 +51,7 @@ const SkillsCard = () => {
     <Box 
       sx={{ 
         display: 'flex', flexWrap: 'wrap',
-        justifyContent: 'center', width: 1000 
+        justifyContent: 'center', maxWidth: { sm: 900, xs: 300 }, mx: 'auto'
       }}
     >
       { renderCards }

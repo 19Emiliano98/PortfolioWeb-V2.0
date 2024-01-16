@@ -1,6 +1,4 @@
-import Link from '@mui/material/Link/Link';
-
-import { Box, Toolbar, MenuItem } from '@mui/material';
+import { Box, Toolbar, MenuItem, Link } from '@mui/material';
 
 interface linkbarProps {
   title: string;
@@ -11,17 +9,17 @@ const linkBar:linkbarProps[] = [
   { title: 'Sobre Mi', goTo: '#aboutMe' },
   { title: 'Proyectos', goTo: '#projects' },
   { title: 'Habilidades', goTo: '#skills' },
-  { title: 'Contacto', goTo: '#test' }
+  { title: 'Contacto', goTo: '#contact' }
 ];
 
 const renderOptionBar = (
   linkBar.map( x => (
-    <MenuItem key={x.title} sx={{ mx: -0.6 }}>
+    <MenuItem key={x.title} sx={{ mx: { sm: -0.6, xs: -1.35 } }}>
       <Link 
         href={ x.goTo }
         sx={{
           textDecoration: 'none', color: '#EFF4FA',
-          fontSize: { md: '18px', xs: '15px' },
+          fontSize: { sm: '18px', xs: '13px' },
           ':hover':{
             color: '#9EEBFF'
           }
@@ -38,14 +36,14 @@ function LinkBar() {
     <Box 
       sx={{ 
         position: 'fixed', 
-        pt: 1.5, left: '50%', 
+        pt: 1.8, left: '50%', 
         transform: 'translate(-50%, 0%)', zIndex: 1
       }}
     >
       <Toolbar 
         sx={{ 
           display: 'flex', justifyContent: { sm: 'center', xs: 'center' },
-          width: 380, backgroundColor: '#1F213A', borderRadius: '300px', zIndex: 1
+          width: { sm: 380, xs: 256 }, backgroundColor: '#1F213A', borderRadius: '300px', zIndex: 1
         }}
       >
         { renderOptionBar }
