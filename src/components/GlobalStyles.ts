@@ -1,5 +1,6 @@
 export const ThemeColors = {
   backgroundColor: '#171624',
+  backgroundColorLight: '#32304F',
   fontColor: '#B7C0DA'
 }
 
@@ -13,6 +14,11 @@ export const TypographyH5 = {
   color: ThemeColors.fontColor,
   fontSize: '1.6rem',
   fontWeight: '600'
+}
+
+export const TypographyMiniCards = {
+  fontSize: '1.3rem',
+  color: '#F7F7EB'
 }
 
 export const ButtonStyles = {
@@ -30,4 +36,11 @@ export const SocialButtonStyles = {
   border: `2px solid ${ThemeColors.fontColor}`,
   borderRadius: '15px',
   backgroundColor: ThemeColors.backgroundColor, textTransform: 'none'
+}
+
+export const SkillsCardStyles = {
+  display: 'flex', alignItems: 'center', justifyContent: 'center',
+  width: 200, height: 65,
+  borderRadius: '10px',
+  backgroundColor: ThemeColors.backgroundColorLight
 }

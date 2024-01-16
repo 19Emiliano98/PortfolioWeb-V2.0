@@ -5,7 +5,7 @@ import CardsProjects from "./CardsProjects";
 
 const ProjectsSection = () => {
   return (
-    <Box>
+    <Box id='projects'>
       <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', mt: 10 }}>
         <WorkIcon sx={{ fontSize: '2.4rem', mr: 2 }} fontSize="inherit"/>
         <Typography sx={{ fontSize: '3rem' }} variant="h2">Proyectos</Typography>
