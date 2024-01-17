@@ -61,20 +61,20 @@ const cardRender = (
   CardsData.map( x => (
     <Box key={ x.title } sx={{ display: { sm: 'flex', xs: 'inline' }, justifyContent: 'center', maxWidth: 720, mb: 5 }}>
       <CardMedia
-        sx={{ width: { sm: 405, xs: 330 }, height: { sm: 290, xs: 220 }, objectFit: 'cover', borderRadius: '15px' }}
+        sx={{ width: { sm: 405, xs: 310 }, height: { sm: 290, xs: 200 }, objectFit: 'cover', borderRadius: '15px' }}
         image= { x.image }
         title= { x.title }
       />
       <Card 
         sx={{ 
           display: 'flex', 
-          width: { sm: 260, xs: 330 }, height: 300,
+          width: { sm: 260, xs: 310 }, height: 290,
           backgroundColor: ThemeColors.backgroundColor,
           boxShadow: '0px 0px 0px 0px'
         }}
       >
         <Box sx={{ height: 290 }}>
-          <CardContent sx={{ width: 215, ml: 1}}>
+          <CardContent sx={{ width: { sm: 215, xs: 260 }, ml: 1 }}>
             <Typography sx={{ color: TypographyH5 }} gutterBottom variant="h5" component="div">
               { x.title }
             </Typography>

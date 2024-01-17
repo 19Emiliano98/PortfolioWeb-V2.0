@@ -9,7 +9,7 @@ import { TypographyH2, TitularIcons } from "../GlobalStyles";
 const SkillsSection = () => {
   return (
     <Box id='skills'>
-      <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', mt: 10 }}>
+      <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', mt: { sm: 10, xs: 0 } }}>
         <BookIcon sx={{ fontSize: TitularIcons.fontSize, mr: 2 }} fontSize="inherit"/>
         <Typography sx={{ fontSize: TypographyH2.fontSize }} variant="h2">Habilidades</Typography>
       </Box>

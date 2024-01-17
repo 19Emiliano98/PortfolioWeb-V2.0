@@ -13,7 +13,8 @@ const AboutMe = () => {
       </Box>
 
       <Typography sx={{ width: { sm: 560, xs: 310 }, fontSize: TypographyBody.fontSize }} variant='body1'>
-        No soy un robot, soy un desarrollador Fullstack apasionado por la programación.
+        No soy un robot, soy un desarrollador Fullstack de 25 años
+        apasionado por la programación.
       </Typography>
     </Box>
   )

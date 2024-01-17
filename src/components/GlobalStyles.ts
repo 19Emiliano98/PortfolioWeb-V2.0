@@ -42,7 +42,7 @@ export const ButtonStyles = {
 }
 
 export const SocialButtonStyles = {
-  width: 180, height: 65,
+  width: { sm: 200, xs: 150 }, height: { sm: 65, xs: 59 },
   border: `2px solid ${ThemeColors.fontColor}`,
   borderRadius: '15px',
   fontSize: { sm: '2.3rem', xs: '1.7rem'},
