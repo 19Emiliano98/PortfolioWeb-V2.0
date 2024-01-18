@@ -30,10 +30,10 @@ const CardsData:CardsDataProps[] = [
   {
     title: "Desusweb",
     paraph: "Landing page creada para una startup, en este trabajo hice colaboracion en la parte Front-end junto a todo un equipo, el codigo esta privado ya que es un repositorio del cual no soy dueño",
-    protected: true,
+    protected: false,
     image: desus1,
     urlWeb: 'https://desusweb-19emiliano98.netlify.app/inicio',
-    urlCode: '',
+    urlCode: 'https://github.com/19Emiliano98/Desusweb.git',
     lenguages: [
       { title: 'Javascript', image: jsImage },
       { title: 'React.js', image: reactImage },
