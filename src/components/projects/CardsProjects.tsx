@@ -29,7 +29,7 @@ interface CardsDataProps {
 const CardsData:CardsDataProps[] = [
   {
     title: "Desusweb",
-    paraph: "Pagina web creada para pequeña empresa desarrolladora de software, código oculto por cuestiones de privacidad del cliente.",
+    paraph: "Landing page creada para una startup, en este trabajo hice colaboracion en la parte Front-end junto a todo un equipo, el codigo esta privado ya que es un repositorio del cual no soy dueño",
     protected: true,
     image: desus1,
     urlWeb: 'https://desusweb-19emiliano98.netlify.app/inicio',
@@ -89,6 +89,7 @@ const cardRender = (
               size="small" 
               variant="contained"
               href={ x.urlWeb }
+              target="_blank"
               sx={{ 
                 textTransform: 'none', 
                 backgroundColor: ButtonStyles
@@ -101,6 +102,7 @@ const cardRender = (
               size="small" 
               variant="contained"
               href={ x.urlCode }
+              target="_blank"
               disabled={ x.protected ? true : false}
               sx={{ 
                 textTransform: 'none', 

@@ -9,6 +9,7 @@ const SocialCards = () => {
     <Box sx={{ display: 'flex', flexDirection: { sm: 'row', xs: 'column'}, alignItems: 'center' }}>
       <Button
         href="https://github.com/19Emiliano98"
+        target="_blank"
         sx={{ 
           width: SocialButtonStyles.width,
           height: SocialButtonStyles.height,
@@ -25,6 +26,7 @@ const SocialCards = () => {
 
       <Button
         href="https://www.linkedin.com/in/emiliano-caballero98"
+        target="_blank"
         sx={{ 
           width: SocialButtonStyles.width,
           height: SocialButtonStyles.height,

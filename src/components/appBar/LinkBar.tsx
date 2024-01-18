@@ -43,7 +43,9 @@ function LinkBar() {
       <Toolbar 
         sx={{ 
           display: 'flex', justifyContent: { sm: 'center', xs: 'center' },
-          width: { sm: 380, xs: 256 }, backgroundColor: '#1F213A', borderRadius: '300px', zIndex: 1
+          width: { sm: 380, xs: 256 },
+          borderRadius: '300px', zIndex: 1,
+          backdropFilter: 'saturate(200%) blur(15px)'
         }}
       >
         { renderOptionBar }
