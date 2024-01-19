@@ -1,7 +1,7 @@
 import { Box, Card, CardMedia, Typography } from "@mui/material"
 
 import { SkillsCardStyles, TypographyMiniCards } from "../GlobalStyles";
-import { cSharpImage,netImage } from "./ImagesLoader";
+import { cSharpImage, netImage, reactNativeImage, nextImage } from "../ImagesLoader";
 
 interface skillsContentProps {
   title: string;
@@ -10,7 +10,9 @@ interface skillsContentProps {
 
 const skillsContent:Array<skillsContentProps> = [
   { title: 'C #', image: cSharpImage },
-  { title: '.Net Core', image: netImage }
+  { title: '.Net Core', image: netImage },
+  { title: 'React Native', image: reactNativeImage },
+  { title: 'Next.Js', image: nextImage }
 ]
 
 const renderCards = (

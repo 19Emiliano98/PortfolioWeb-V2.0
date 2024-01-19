@@ -3,7 +3,7 @@ import { Box, Card, CardMedia, Typography } from "@mui/material"
 import { 
   jsImage, tsImage, reactImage, materialImage,
   boostrapImage, nodeImage, mongoImage, sqlImage
-} from "./ImagesLoader";
+} from "../ImagesLoader";
 import { SkillsCardStyles, TypographyMiniCards } from "../GlobalStyles";
 
 interface skillsContentProps {

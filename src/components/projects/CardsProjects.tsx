@@ -3,13 +3,14 @@ import { Card, CardMedia, CardContent, Typography, CardActions, Button, Box } fr
 import { ThemeColors, TypographyBody, TypographyH5, ButtonStyles } from '../GlobalStyles';
 import LaunchIcon from '@mui/icons-material/Launch';
 import LinkIcon from '@mui/icons-material/Link';
+
 import desus1 from '../../img/projects/desus1.png';
 import imageUploader from '../../img/projects/ImageUploaderChallengue/UploadImage.png';
-import jsImage from '../../img/lenguages/jsLogo.png';
-import tsImage from '../../img/lenguages/tsLogo.png';
-import reactImage from '../../img/lenguages/Frontend/reactLogo.png';
-import nodeImage from '../../img/lenguages/Backend/nodejsLogo.jpg';
-import materialImage from '../../img/lenguages/Frontend/materialLogo.png';
+
+import { 
+  jsImage, tsImage, reactImage, nodeImage, materialImage 
+} 
+from '../../components/ImagesLoader';
 import Tags from './Tags';
 
 interface testing {
