@@ -1,7 +1,7 @@
 import { Box, Card, CardMedia, Typography } from "@mui/material"
 
 import { 
-  jsImage, tsImage, reactImage, materialImage,
+  jsImage, tsImage, reactImage, nextImage, materialImage,
   boostrapImage, nodeImage, mongoImage, sqlImage
 } from "../ImagesLoader";
 import { SkillsCardStyles, TypographyMiniCards } from "../GlobalStyles";
@@ -15,6 +15,7 @@ const skillsContent:Array<skillsContentProps> = [
   { title: 'Javascript', image: jsImage },
   { title: 'Typescript', image: tsImage },
   { title: 'React.js', image: reactImage },
+  { title: 'Next.js', image: nextImage },
   { title: 'Material UI', image: materialImage },
   { title: 'Boostrap', image: boostrapImage },
   { title: 'Node.JS', image: nodeImage },

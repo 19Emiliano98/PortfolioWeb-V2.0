@@ -4,11 +4,11 @@ import { ThemeColors, TypographyBody, TypographyH5, ButtonStyles } from '../Glob
 import LaunchIcon from '@mui/icons-material/Launch';
 import LinkIcon from '@mui/icons-material/Link';
 
-import desus1 from '../../img/projects/desus1.png';
+import desus1 from '../../img/projects/desus1.jpeg';
 import imageUploader from '../../img/projects/ImageUploaderChallengue/UploadImage.png';
 
 import { 
-  jsImage, tsImage, reactImage, nodeImage, materialImage 
+  tsImage, nextImage, reactImage, nodeImage, materialImage 
 } 
 from '../../components/ImagesLoader';
 import Tags from './Tags';
@@ -30,14 +30,14 @@ interface CardsDataProps {
 const CardsData:CardsDataProps[] = [
   {
     title: "Desusweb",
-    paraph: "Landing page creada para una startup, en este trabajo hice colaboracion en la parte Front-end junto a todo un equipo, el codigo esta privado ya que es un repositorio del cual no soy dueño",
+    paraph: "Landing page creada para una startup, en este trabajo hice colaboracion en la parte Front-end junto a un equipo de diseñadores UX/UI y desarrollador Backend",
     protected: false,
     image: desus1,
-    urlWeb: 'https://desusweb-19emiliano98.netlify.app/inicio',
-    urlCode: 'https://github.com/19Emiliano98/Desusweb.git',
+    urlWeb: 'https://desusweb.vercel.app',
+    urlCode: 'https://github.com/19Emiliano98/DesuswebNext.git',
     lenguages: [
-      { title: 'Javascript', image: jsImage },
-      { title: 'React.js', image: reactImage },
+      { title: 'Typescript', image: tsImage },
+      { title: 'Next.js', image: nextImage },
       { title: 'Material-UI', image: materialImage }
     ]
   },
@@ -53,16 +53,25 @@ const CardsData:CardsDataProps[] = [
       { title: 'React.js', image: reactImage },
       { title: 'Material-UI', image: materialImage },
       { title: 'Node.js', image: nodeImage }
-
     ]
   }
 ]
 
 const cardRender = (
   CardsData.map( x => (
-    <Box key={ x.title } sx={{ display: { sm: 'flex', xs: 'inline' }, justifyContent: 'center', maxWidth: 720, mb: 5 }}>
+    <Box 
+      key={ x.title } 
+      sx={{ 
+        display: { sm: 'flex', xs: 'inline' }, 
+        justifyContent: 'center', alignItems: 'center',
+        maxWidth: 710, mb: 5 
+      }}
+    >
       <CardMedia
-        sx={{ width: { sm: 405, xs: 310 }, height: { sm: 290, xs: 200 }, objectFit: 'cover', borderRadius: '15px' }}
+        sx={{ 
+          width: { sm: 440, xs: 310 }, height: { sm: 250, xs: 200 }, 
+          objectFit: 'cover', borderRadius: '15px' 
+        }}
         image= { x.image }
         title= { x.title }
       />

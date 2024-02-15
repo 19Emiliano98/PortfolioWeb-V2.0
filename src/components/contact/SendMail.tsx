@@ -1,7 +1,17 @@
 import { Box, Button, Card, CardContent, Typography, } from "@mui/material"
 import ContentCopyIcon from '@mui/icons-material/ContentCopy';
-
 import { TypographyBody, ThemeColors, ButtonStyles } from "../GlobalStyles"
+import Swal from 'sweetalert2'
+
+const Toast = Swal.mixin({
+  toast: true,
+  position: "bottom-end",
+  showConfirmButton: false,
+  timer: 2000,
+  timerProgressBar: false,
+  background: '#32304F',
+  color: '#fff'
+});
 
 const SendMail = () => {
   const copyToClipboard = () => {
@@ -10,6 +20,11 @@ const SendMail = () => {
     if ( res != null ) {
       navigator.clipboard.writeText(res.textContent!)
     }
+    
+    Toast.fire({
+      icon: "info",
+      title: "Copiado!"
+    });
   }
   // <Box sx={{ display: 'flex', mb: 10, flexDirection: { sm: 'row', xs: 'column'}, alignItems: 'center' }}>
   return (
