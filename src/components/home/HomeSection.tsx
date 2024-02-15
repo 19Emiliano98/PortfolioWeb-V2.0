@@ -1,10 +1,7 @@
 import { Box, Avatar } from '@mui/material';
-import ContactPageIcon from '@mui/icons-material/ContactPage';
 
 import AboutMe from './AboutMe';
-import { ThemeColors } from '../GlobalStyles';
 import Image from '../../img/imagenPerfil.jpeg';
-import doc from '../../docs/Caballero Emiliano CV.pdf';
 
 const HomeSection = () => {
   return (
@@ -22,27 +19,6 @@ const HomeSection = () => {
 
           <AboutMe />
 
-          <Box 
-            component='a' 
-            href={doc} 
-            target='_blank'
-            sx={{
-              display: 'flex', justifyContent: 'center', alignItems: 'center',
-              position: 'fixed',
-              width: 100, height: 100,
-              backgroundColor: ThemeColors.fontColor,
-              borderRadius: '50%',
-              ml: 133, mt: -47
-            }}
-          >
-            <ContactPageIcon 
-              fontSize='inherit' 
-              sx={{ 
-                fontSize: '70px', 
-                color: ThemeColors.backgroundColor 
-              }}
-            />
-          </Box>
         </Box>
       </Box>
   )
