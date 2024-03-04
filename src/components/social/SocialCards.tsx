@@ -2,7 +2,7 @@ import { Box, Typography, Button } from "@mui/material";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
-import doc from '../../docs/Caballero Emiliano CV.pdf';
+import doc from '../../docs/Emiliano Caballero - CV.pdf';
 import { SocialButtonStyles,  TypographyMiniCards } from "../GlobalStyles";
 
 const SocialCards = () => {
